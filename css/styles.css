@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;700&family=Roboto&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -8,17 +10,34 @@ html {
 }
 body {
   background: linear-gradient(white, rgb(243, 243, 223));
+  font-family: 'Cairo', sans-serif;
 }
 div {
   margin: 5px;
   padding: 5px;
 }
 header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.logo-container {
+  width: 90px;
+  height: 70px;
+  margin: 10px;
+  background-color: burlywood;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 .logo {
-  margin: 5px;
-  display: block;
-  float: left;
+  width: 90px;
+  height: 70px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
 }
 .menu-btn {
   float: right;
@@ -28,8 +47,37 @@ header {
   cursor: pointer;
 }
 nav {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 35vw;
 }
+nav a {
+  transition: padding 0.3s linear;
+  -webkit-transition: padding 0.3s linear;
+  -moz-transition: padding 0.3s linear;
+  -ms-transition: padding 0.3s linear;
+  -o-transition: padding 0.3s linear;
+}
+nav a,
+nav a:link,
+nav a:hover,
+nav a:active,
+nav a:visited {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 15px;
+}
+
+nav a:hover {
+  background-color: #deb887;
+  color: white;
+  padding: 5px 5px 5px 10px;
+}
+
 main {
 }
 .banner {
@@ -52,6 +100,21 @@ footer {
     display: none;
   }
   nav {
-    display: initial;
+    flex-direction: row;
+    position: static;
+    width: 100vw;
+    font-size: 1.2rem;
+    height: fit-content;
+    margin: 15px 0px;
+  }
+  nav a {
+    transition: none !important;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+  }
+  nav a:hover {
+    padding: 10px 10px;
   }
 }
