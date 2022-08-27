@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;700&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;700&family=Dancing+Script&family=Roboto&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +11,16 @@ body {
   background: linear-gradient(white, rgb(243, 243, 223));
   font-family: 'Cairo', sans-serif;
 }
-
+h1,
+h3 {
+  letter-spacing: 10px;
+}
+h1 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+}
 header {
   position: relative;
   display: flex;
@@ -80,9 +88,22 @@ nav a:hover {
 main {
 }
 .banner {
-  background: url('../images/big-banner.jpg') center/cover no-repeat;
+  background: linear-gradient(
+      rgba(225, 245, 220, 0.1),
+      rgba(225, 245, 220, 0.3)
+    ),
+    url('../images/big-banner.jpg') center/cover no-repeat;
   width: 100vw;
   height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner h1 {
+}
+.banner h3 {
+  font-family: 'Dancing Script', cursive;
 }
 .about {
 }
