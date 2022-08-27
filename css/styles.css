@@ -51,13 +51,10 @@ nav {
   flex-direction: column;
   position: absolute;
   top: 50px;
-  right: 50px;
+  right: 60px;
   width: 35vw;
-<<<<<<< HEAD
   display: none;
-=======
-  z-index: -1;
->>>>>>> 00114d947f38e418a1ec6061839dfeed8c132ef7
+  background-color: #e2caaa;
 }
 nav a {
   transition: padding 0.3s linear;
