@@ -12,10 +12,7 @@ body {
   background: linear-gradient(white, rgb(243, 243, 223));
   font-family: 'Cairo', sans-serif;
 }
-div {
-  margin: 5px;
-  padding: 5px;
-}
+
 header {
   position: relative;
   display: flex;
@@ -83,6 +80,9 @@ nav a:hover {
 main {
 }
 .banner {
+  background: url('../images/big-banner.jpg') center/cover no-repeat;
+  width: 100vw;
+  height: 400px;
 }
 .about {
 }
@@ -120,5 +120,8 @@ footer {
   }
   nav a:hover {
     padding: 10px 10px;
+  }
+  .banner {
+    height: 100vh;
   }
 }
