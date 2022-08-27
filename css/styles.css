@@ -53,6 +53,7 @@ nav {
   top: 50px;
   right: 50px;
   width: 35vw;
+  display: none;
 }
 nav a {
   transition: padding 0.3s linear;
@@ -106,6 +107,7 @@ footer {
     font-size: 1.2rem;
     height: fit-content;
     margin: 15px 0px;
+    display: flex;
   }
   nav a {
     transition: none !important;
