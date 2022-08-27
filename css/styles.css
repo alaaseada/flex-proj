@@ -109,6 +109,7 @@ footer {
     height: fit-content;
     margin: 15px 0px;
     display: flex;
+    background-color: white;
   }
   nav a {
     transition: none !important;
