@@ -19,17 +19,17 @@ h1 {
   font-size: 3rem;
 }
 h3 {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 header {
   position: relative;
   display: flex;
   justify-content: space-between;
+  padding: 10px;
 }
 .logo-container {
   width: 90px;
   height: 70px;
-  margin: 10px;
   background-color: burlywood;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -47,6 +47,7 @@ header {
 .menu-btn {
   float: right;
   font-size: 10vw;
+  margin: 0px 10px;
 }
 .menu-btn:hover {
   cursor: pointer;
@@ -99,6 +100,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 30px;
 }
 .banner h1 {
 }
